@@ -15,6 +15,7 @@ function scrolly($speed) {
     }, $speed);
 
     return false;
+
   });
 
 }
