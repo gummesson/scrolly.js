@@ -1,18 +1,20 @@
-function scrolly($speed) {
+function scrolly(speed) {
 
-  if (typeof $speed === "undefined") {
-    var $speed = "slow";
+  var speed, page, target;
+
+  if (typeof(speed) === "undefined") {
+    speed = "slow";
   }
 
-  var $page = $("html, body");
+  page = $("html, body");
 
   $(".scroll").click(function(){
 
-    var target = $(this).attr("href");
+    target = $(this).attr("href");
 
-    $page.animate({
+    page.animate({
       scrollTop: $(target).offset().top
-    }, $speed);
+    }, speed);
 
     return false;
 
