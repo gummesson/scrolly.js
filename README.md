@@ -18,6 +18,7 @@ Append the class `.scroll` to an anchor and use the `href` to target an ID.
     
     <script type="text/javascript">
       $(document).ready(function() {
+        "use strict";
         scrolly();
       });
     </script>
