@@ -1,27 +1,28 @@
 # Scrolly
 
-Just another dead simple [jQuery](http://jquery.com/ "jQuery") anchor scrolling plugin.  
+Just another dead simple [jQuery](http://jquery.com/ "jQuery") anchor scrolling script.  
 
 ## Usage
 
-Append the class `.scroll` to an anchor and use the `href` to target an ID.
+Source the script, add the class `.scroll` to an/the anchor(s) and use the `href` to target an ID.
 
 **Markup:**
 
+    <script src="scrolly.js"></script>
+
+    <div id="#top">
+      ...
+    </div>
+
     <a href="#top" class="scroll">
-      Go to top
+      Go to the top
     </a>
 
 **Javascript**:
 
-    <script src="scrolly.js"></script>
-    
-    <script type="text/javascript">
-      $(document).ready(function() {
-        "use strict";
-        scrolly();
-      });
-    </script>
+    $(document).ready(function() {
+      scrolly();
+    });
 
 You can also insert your scrolling speed of choice between the parentheses:
 
