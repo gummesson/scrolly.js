@@ -22,10 +22,6 @@ Source the script, add the class `.scroll` to an/the anchor(s) and use the `href
 
 **Javascript**:
 
-    $(document).ready(function() {
-      Scrolly.init();
-    });
-
 You can also use another class name/attribute selector and change the scrolling speed like this:
 
     $(document).ready(function() {
@@ -33,7 +29,6 @@ You can also use another class name/attribute selector and change the scrolling 
       Scrolly.init({
         scrollHook: $(".hook"),
         scrollSpeed: 1500
-
       });
 
     });
