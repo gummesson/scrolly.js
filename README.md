@@ -18,6 +18,30 @@ Source the script, add the class `.scroll` to an/the anchor(s) and use the `href
       Go to the top
     </a>
 
+### New version
+
+**Javascript**:
+
+    $(document).ready(function() {
+      Scrolly.init();
+    });
+
+You can also use another class name/attribute selector and change the scrolling speed like this:
+
+    $(document).ready(function() {
+
+      Scrolly.init({
+        scrollHook: $(".hook"),
+        scrollSpeed: 1500
+
+      });
+
+    });
+
+### Old version
+
+*The old version is kept for reference purposes.*
+
 **Javascript**:
 
     $(document).ready(function() {
