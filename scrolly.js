@@ -1,4 +1,4 @@
-(function(){
+(function($){
 
   "use strict";
 
@@ -53,4 +53,4 @@
     Scrolly.init();
   });
 
-})();
+})(jQuery);
